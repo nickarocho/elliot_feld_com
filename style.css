@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: futura;
+    font-weight: 100;
+    margin: 1rem;
+    background-color: white;
+    color: #1d1e22;
+  }
+  
+  main {
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: white;
+  }
+  
+  #welcome-section {
+  }
+  
+  .h1-title {
+    font-size: 10vw;
+    color: #33363b;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .h1-contact {
+    font-size: 58px;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 90%;
+  }
+  
+  h4 {
+    font-size: 75%;
+  }
+  
+  .p-title {
+    font-size: 2vw;
+    color: #33363b;
+    margin-top: 0px;
+  }
+  
+  .p-contact {
+    font-size: 21px;
+  }
+  
+  .navbar {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33363b;
+  }
+  
+  .nav-list {
+    float: right;
+  }
+  
+  #nav-title {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+    color: #33363b;
+  }
+  
+  .grid-container {
+    scroll-margin-top: 63px;
+    columns: 2 200px;
+    column-gap: 1rem; // what is this?
+  }
+
+  @media (max-width: 545px) {
+      .grid-container {
+          columns: 1;
+      }
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  figure:hover .caption {
+    display: flex;
+  }
+  
+  figure:hover .image {
+    filter: blur(2px);
+  }
+  
+  
+  figure img {
+    width: 100%;
+  }
+  
+  img {
+    padding-bottom: 1rem;
+  }
+  
+  .caption {
+    display: none;
+    position: absolute;
+    top: 0; /*why does this work*/
+    width: 100%;
+    height: calc(100% - 1.25rem);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: rgba(0, 0, 0, 0.325);
+  }
+  
+  .title {
+    text-transform: uppercase;
+    font-weifght: 600;
+  }
+  
+  #recent-work {
+    scroll-margin-top: 58px;
+  }
+  
+  .recent-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    position: relative;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-basis: auto;
+    box-sizing: inherit;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color:;
+  }
+  
+  .div-container {
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    background-color:;
+    width: 25%;
+    height: 200px;
+  }
+  
+  @media (max-width:1250px) {
+    .div-container {
+      width: 33.3333%;
+    }
+  }
+  
+  @media (max-width:900px) {
+    .div-container {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width:545px) {
+    .div-container {
+      width: 100%;
+    }
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    height: 100vh;
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color:;
+  }
+  
+  .button-group {}
+  
+  .contact-buttons {
+    margin: 10px;
+    width: auto;
+    height: 25px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  .contact-buttons:hover {
+    box-shadow: 12px 12px 16px 0px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button-text {
+    padding: 10px;
+    text-decoration: none;
+    color: #33363b;
+  }
