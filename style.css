@@ -31,9 +31,6 @@ html {
     background-color: white;
   }
   
-  #welcome-section {
-  }
-  
   .h1-title {
     font-size: 10vw;
     color: #33363b;
@@ -77,6 +74,12 @@ html {
     overflow: hidden;
     background-color: #33363b;
   }
+
+  @media (max-width: 545px) {
+    .navbar {
+      display: none;
+    }
+  }
   
   .nav-list {
     float: right;
@@ -98,11 +101,66 @@ html {
     background-color: white;
     color: #33363b;
   }
+
+  /* Style The Dropdown Button FINAL */
+.dropbutton {
+  background-color: #33363b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+  display: none;
+}
+
+@media (max-width: 545px) {
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #33363b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(187, 187, 187)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbutton {
+  background-color: #33363b;
+}
   
   .grid-container {
     scroll-margin-top: 63px;
     columns: 2 200px;
-    column-gap: 1rem; // what is this?
+    column-gap: 1rem;
   }
 
   @media (max-width: 545px) {
@@ -149,7 +207,7 @@ html {
   
   .title {
     text-transform: uppercase;
-    font-weifght: 600;
+    font-weight: 600;
   }
   
   #recent-work {
@@ -175,7 +233,6 @@ html {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    background-color:;
   }
   
   .div-container {
@@ -184,7 +241,6 @@ html {
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 0;
-    background-color:;
     width: 25%;
     height: 200px;
   }
@@ -221,10 +277,7 @@ html {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    background-color:;
   }
-  
-  .button-group {}
   
   .contact-buttons {
     margin: 10px;
