@@ -10,9 +10,6 @@ html {
     color: #1d1e22;
   }
   
-  main {
-  }
-  
   .welcome-container {
     display: flex;
     flex-direction: column;
